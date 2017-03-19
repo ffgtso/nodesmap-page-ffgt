@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Freifunk Münsterland - Karten</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+	  <div class="page-header">
+    <div class="row">
+      <div class="col-md-2 col-sm-3 col-xs-3">
+        <img src="logo.svg" class="img" alt="Logo Freifunk Münsterland">
+      </div>
+      <div class="col-md-10 col-sm-9 col-xs-9">
+        <h1>Karten - Freifunk Münsterland
+    <br/><small>Karten der einzelnen Domänen und der Communities</small></h1>
+      </div>
+    </div>
+    </div>
+  </div>
+  <!-- <div class="container">
+    <small>infos</small>
+  </div> -->
+  <div class="container">
+    <form action="#" method="get">
+      <div class="input-group">
+      <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+        <input class="form-control" id="system-search" name="q" placeholder="Suche nach" required>
+        <span class="input-group-btn">
+          <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+        </span>
+      </div>
+    </form>
+  <div class="row">
+    <div class="col-md-6">
+        <table class="table table-list-search table-hover">
+          <thead>
+            <tr>
+              <th>Domäne</th>
+              <th>Ort</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Alle Domänen einfügen -->
+            <tr>
+              <td>01</td>
+              <td>Münster</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <table class="table  table-list-search table-hover">
+          <thead>
+            <tr>
+              <th>Community</th>
+              <th>Domänen</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Alle Communities einfügen -->
+            <tr>
+              <td>Münster</td>
+              <td>01,16</td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+  </div>
+
+     <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="search.js"></script>
+</body>
