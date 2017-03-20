@@ -4,7 +4,8 @@
   <title>Freifunk Münsterland - Karten</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link rel="stylesheet" href="ffms.css"> 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -12,64 +13,92 @@
 	<div class="container">
 	  <div class="page-header">
     <div class="row">
-      <div class="col-md-2 col-sm-3 col-xs-3">
-        <img src="logo.svg" class="img" alt="Logo Freifunk Münsterland">
+      <div class="col-md-2 col-sm-3">
+        <img id="ffms-logo" src="logo.svg" class="img" alt="Logo Freifunk Münsterland">
       </div>
-      <div class="col-md-10 col-sm-9 col-xs-9">
-        <h1>Karten - Freifunk Münsterland
-    <br/><small>Karten der einzelnen Domänen und der Communities</small></h1>
+      <div class="col-md-10 col-sm-9">
+        <h2>Karten - Freifunk Münsterland
+    <br/><small>Karten der einzelnen Domänen und der Communities</small></h2>
       </div>
     </div>
     </div>
   </div>
-  <!-- <div class="container">
-    <small>infos</small>
-  </div> -->
+  <div class="alert alert-info"> 
+      <div style="text-align:center"> 
+      <strong> <a href="map/">Gesamtkarte des Freifunk Münsterland</a></strong>
+      </div>
+  </div>
   <div class="container">
-    <form action="#" method="get">
-      <div class="input-group">
-      <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
+  <div class="row">
+    <div class="col-md-4 col-sm-4">
+        <form action="#" method="get">
+        <div class="input-group">
+        <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
         <input class="form-control" id="system-search" name="q" placeholder="Suche nach" required>
         <span class="input-group-btn">
           <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
         </span>
       </div>
     </form>
-  <div class="row">
-    <div class="col-md-6">
-        <table class="table table-list-search table-hover">
+    </div>
+    <div class="col-md-4 col-sm-4">
+        <table id="ffms-table" class="table table-list-search table-hover" id="ffms-table">
           <thead>
             <tr>
-              <th>Domäne</th>
-              <th>Ort</th>
+              <th><div style=text-align:center>Domänen</div></th>
             </tr>
           </thead>
           <tbody>
             <!-- Alle Domänen einfügen -->
             <tr>
-              <td>01</td>
-              <td>Münster</td>
+              <td><a href="#">01 - Münster</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">06 - Test: Westmünsterland</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">07 - Telgte</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">08 - Gescher</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">09 - Stadtlohn</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">10 - Multidomänen-L2TP-Test</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">11 - Bocholt</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">12 - Dülmen</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">26 - Borken</a></td>
             </tr>
           </tbody>
         </table>
     </div>
-    <div class="col-md-6">
-        <table class="table  table-list-search table-hover">
+    <div class="col-md-4 col-sm-4">
+        <table id="ffms-table" class="table  table-list-search table-hover" id="ffms-table">
           <thead>
             <tr>
-              <th>Community</th>
-              <th>Domänen</th>
+              <th><div style=text-align:center>Gruppen</div></th>
             </tr>
           </thead>
           <tbody>
             <!-- Alle Communities einfügen -->
             <tr>
-              <td>Münster</td>
-              <td>01,16</td>
+              <td><a href="map_Borken/">Community Borken - 26</a></td>
+            </tr>
+            <tr>
+              <td><a href="map_Münster/">Community Münster - 01,16</a></td>
             </tr>
           </tbody>
         </table>
     </div>
+
   </div>
   </div>
 

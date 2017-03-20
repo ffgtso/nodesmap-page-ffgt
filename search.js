@@ -43,11 +43,6 @@ $(document).ready(function() {
             tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">Kein Eintrag gefunden.</td></tr>');
         }
     });
-jQuery(document).ready(function($) {
-    $(".clickable-row").click(function() {
-        window.location = $(this).data("href");
-    });
-});
 });
 
       
