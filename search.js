@@ -13,7 +13,7 @@ $(document).ready(function() {
             //Lower text for case insensitive
             var rowText = $(val).text().toLowerCase();
             var inputText = $(that).val().toLowerCase();
-            if(inputText != '')
+            if(inputText !== '')
             {
                 $('.search-query-sf').remove();
                 tableBody.prepend('<tr class="search-query-sf"><td colspan="6" <div class="alert alert-info">Einträge mit <strong>"'
@@ -38,7 +38,7 @@ $(document).ready(function() {
             }
         });
         //all tr elements are hidden
-        if(tableRowsClass.children(':visible').length == 0)
+        if(tableRowsClass.children(':visible').length === 0)
         {
             tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">Kein Eintrag gefunden.</td></tr>');
         }
