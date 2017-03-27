@@ -11,5 +11,5 @@
 
 - Bootstrap CDN --> lokale Installation (?)
 - proper Ansible implementation
--- single domaines in community list 
+- include single domains in community list 
 - Link zu dem Logo zentralisieren (?)
