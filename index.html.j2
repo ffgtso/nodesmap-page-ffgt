@@ -86,12 +86,12 @@
 {% for community in communities %}
 {% if community != "None" %}
             <tr>
-                <td><a Community href="map_{{community}}/">Community {{community}}</a> <br/> Domänen: 
-                {% for domaene in domaenen|dictsort %}
-                    {% if community == domaene[1].community %}
-                    <a href="map{{domaene[0]}}/">{{domaene[0]}}</a>
-                    {% endif %}
-                {% endfor %}
+                <td><a Community href="map_{{community}}/">Community {{community}}</a><br/> <span class="text-muted">Domänen:</span>  
+{% for domaene in domaenen|dictsort %}
+{% if community == domaene[1].community %}
+                    <a class="text-muted" href="map{{domaene[0]}}/">{{domaene[0]}}</a>
+{% endif %}
+{% endfor %}
                 </td>
             </tr>
  
