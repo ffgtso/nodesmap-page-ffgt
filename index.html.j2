@@ -30,17 +30,17 @@
       <form action="#" method="get">
         <div class="input-group">
           <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
-          <input class="form-control" id="system-search" name="q" placeholder="Suche nach" required>
+          <input class="form-control" id="system-search" name="q" placeholder="Suche nach" autofocus required>
           <span class="input-group-btn">
-          <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+          <button type="submit" class="btn btn-ffms"><i class="glyphicon glyphicon-search"></i></button>
           </span>
         </div>
       </form>
       <br/>
-      <p><strong><a href="map/">Gesamtkarte des Freifunk Münsterlands</a></strong></p>
-      <p><a href="https://freifunk-muensterland.de">Freifunk Münsterland</a></p>
-      <p><a href="https://wiki.freifunk-muensterland.de/">Freifunk Münsterland Wiki</a></p>
-      <p><a href="https://forum.freifunk-muensterland.de/">Freifunk Münsterland Forum</a></p>
+      <h4><strong><a href="map/">Gesamtkarte des Freifunk Münsterlands</a></strong></h4>
+      <p><a href="https://freifunk-muensterland.de">{{freifunk.name}}</a></p>
+      <p><a href="https://wiki.freifunk-muensterland.de/">{{freifunk.name}} Wiki</a></p>
+      <p><a href="https://forum.freifunk-muensterland.de/">{{freifunk.name}} Forum</a></p>
     </div>
     <!-- Spalte mit Domänen -->
     <div class="col-md-4 col-sm-4">

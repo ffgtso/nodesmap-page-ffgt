@@ -16,7 +16,7 @@ $(document).ready(function() {
             if(inputText !== '')
             {
                 $('.search-query-sf').remove();
-                tableBody.prepend('<tr class="search-query-sf"><td colspan="6" <div class="alert alert-info">Einträge mit <strong>"'
+                tableBody.prepend('<tr class="search-query-sf"><td colspan="6" <div class="ffms-alert">Einträge mit <strong>"'
                     + $(that).val()
                     + '"</strong></div></td></tr>');
             }
