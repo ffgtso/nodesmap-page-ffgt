@@ -6,11 +6,8 @@
         text-align:center;
     }
 }
-a:link{
+a:link, a:visited, a:hover, a:active{
     color:#dc0067;
-}
-a:visited{
-    color:#b00052;
 }
 .ffms-alert{
     background-color:#ffd97f;
