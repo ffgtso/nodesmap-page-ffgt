@@ -1,6 +1,5 @@
 $(document).ready(function() {
     var activeSystemClass = $('.list-group-item.active');
-
     //something is entered in search form
     $('#system-search').keyup( function() {
        var that = this;
@@ -42,7 +41,8 @@ $(document).ready(function() {
         {
             tableBody.append('<tr class="search-sf"><td class="text-muted" colspan="6">Kein Eintrag gefunden.</td></tr>');
         }
-    });
+    });    
 });
+
 
       

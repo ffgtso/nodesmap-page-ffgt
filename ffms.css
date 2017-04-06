@@ -36,6 +36,6 @@ a:link, a:visited, a:hover, a:active{
 }
 .btn-ffms:active{
     background-color:#ffd97f;
-    border:2px solid #ffb400;
-    box-shadow: 0px 0px 5px #ffb400;    
+    border:0px solid #ffd97f;
+    box-shadow: 0px 0px 10px #ffb400;    
 }

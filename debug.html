@@ -6,8 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="ffms.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -27,14 +25,19 @@
   <div class="row">
     <!-- Suchfeld und Links -->
     <div class="col-md-4 col-sm-4 col-xs-12">
+        <form type="text" action="javascript:myScroll()"> 
         <div class="input-group">
           <!-- USE TWITTER TYPEAHEAD JSON WITH API TO SEARCH -->
           <input class="form-control" id="system-search" 
                 name="q" placeholder="Suche nach" autofocus>
-          <span class="input-group-btn">
-          <button id="searchbutton" type="button" class="btn btn-ffms"><i class="glyphicon glyphicon-search"></i></button>
-          </span>
+            <span class="input-group-btn">
+                <button type="submit" id="searchbutton" class="btn btn-ffms">                
+                    <i class="glyphicon glyphicon-search"></i>
+                </button>
+            </span>
+          </input>
         </div>
+        </form>
       <br/>
       <h4><strong><a href="map/">Gesamtkarte des Freifunk Münsterlands</a></strong></h4>
       <p><a href="https://freifunk-muensterland.de">Freifunk Münsterland</a></p>
@@ -48,7 +51,7 @@
           <thead>
             <tr>
               <th>
-                  <div style=text-align:center><h4 id="domain">Domänen</h4></div>
+                  <div style=text-align:center><h4>Domänen</h4></div>
               </th>
             </tr>
           </thead>
@@ -388,11 +391,20 @@
     </div>
   </div>
   </div>
-     <!-- Bootstrap core JavaScript
-    ================================================== -->
-     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="search.js"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/search.js"></script>
+    <script>
+        function myScroll(my) {
+        $('html, body').animate({
+            scrollTop: $(".table").offset().top
+            }, 200);
+        }
+    </script>
+
+
+
+
 </body>
+
