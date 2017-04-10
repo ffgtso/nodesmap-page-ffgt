@@ -59,11 +59,17 @@
             <!-- Alle Domänen einfügen -->
 {% for domaene in domaenen|dictsort %}
             <tr>
+<<<<<<< HEAD:ansible/index.html.j2
               <td>
                   <a href="map{{domaene[0]}}/">{{domaene[0]}} - {{domaene[1].name}}</a> 
                   &ensp;&ndash;&ensp;
                   <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene{{domaene[0]}}">Firmware </a>
               </td>
+=======
+              <td><a href="map{{domaene[0]}}/">{{domaene[0]}} - {{domaene[1].name}}</a> </td>
+              &ensp;&ndash;&ensp;
+              <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene{{domaene[0]}}">Firmware </a>
+>>>>>>> c7317c49bf560a24caec4dbef0e3b1e8c8bdf4e1:index.html.j2
             </tr>
 {% endfor %}
           </tbody>
