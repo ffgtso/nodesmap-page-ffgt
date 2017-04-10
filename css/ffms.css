@@ -1,10 +1,10 @@
 @media screen and (max-width: 767px) {
-    #ffms-logo {
-		width: 110px;
-    }
-    .ffms-align-center{
-        text-align:center;
-    }
+    #ffms-logo {width: 110px}
+    .ffms-align-center{text-align:center}
+    .narrow-results{display:none}
+}
+@media screen and (min-width:768px){
+	.narrow-results{display:block}
 }
 a:link, a:visited, a:hover, a:active{
     color:#dc0067;
@@ -47,4 +47,13 @@ a.ffms-muted:hover {
     background-color:#ffd97f;
     border:0px solid #ffd97f;
     box-shadow: 0px 0px 10px #ffb400;    
+}
+.btn-ffms-collapse, .btn-ffms-collapse:active, .btn-ffms-collapse:target{
+    color:#898285;
+    background-color:#FFFFFF;
+}
+.btn-ffms-collapse:hover{
+    color:#898285;
+    cursor: pointer;
+    background-color:#ffffff;
 }
