@@ -62,7 +62,11 @@
             </tr> -->
 {% for domaene in domaenen|dictsort %}
             <tr>
-              <td><a href="map{{domaene[0]}}/">{{domaene[0]}} - {{domaene[1].name}}</a> </td>
+              <td>
+                  <a href="map{{domaene[0]}}/">{{domaene[0]}} - {{domaene[1].name}}</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene{{domaene[0]}}">Firmware </a>
+              </td>
             </tr>
 {% endfor %}
           </tbody>
@@ -88,10 +92,10 @@
 {% for community in communities %}
 {% if community != "None" %}
             <tr>
-                <td><a Community href="map_{{community}}/">Community {{community}}</a><br/> <span class="text-muted">Domänen:</span>  
+                <td><a Community href="map_{{community}}/">Community {{community}}</a><br/> <span class="ffms-muted">Domänen:</span>  
 {% for domaene in domaenen|dictsort %}
 {% if community == domaene[1].community %}
-                    <a class="text-muted" href="map{{domaene[0]}}/">{{domaene[0]}}</a>
+                    <a href="map{{domaene[0]}}/">{{domaene[0]}}</a>
 {% endif %}
 {% endfor %}
                 </td>

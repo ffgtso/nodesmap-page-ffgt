@@ -9,6 +9,16 @@
 a:link, a:visited, a:hover, a:active{
     color:#dc0067;
 }
+a.ffms-muted:link, a.ffms-muted:visited, a.ffms-muted:active{
+    color:#898285;
+   /*  #845e6e*/
+}
+a.ffms-muted:hover {
+    color:#dc0067
+}
+.ffms-muted{
+    color:#898285;
+}
 .ffms-alert{
     background-color:#ffd97f;
 }
