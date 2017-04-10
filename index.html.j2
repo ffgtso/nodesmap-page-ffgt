@@ -56,13 +56,12 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Alle Domänen einfügen 
-            <tr>
-              <td><a href="mapXX/"> XX - name</a></td>
-            </tr> -->
+            <!-- Alle Domänen einfügen -->
 {% for domaene in domaenen|dictsort %}
             <tr>
               <td><a href="map{{domaene[0]}}/">{{domaene[0]}} - {{domaene[1].name}}</a> </td>
+              &ensp;&ndash;&ensp;
+              <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene{{domaene[0]}}">Firmware </a>
             </tr>
 {% endfor %}
           </tbody>
@@ -80,11 +79,7 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Alle Communities einfügen 
-            <tr>
-                <td><a href=""> </a></td>
-            </tr>
-            -->
+            <!-- Alle Communities einfügen -->
 {% for community in communities %}
 {% if community != "None" %}
             <tr>
