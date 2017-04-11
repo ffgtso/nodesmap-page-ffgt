@@ -1,19 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en"><!-- Mit Ansible erzeugt - änderungen werden überschrieben -->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Freifunk Münsterland - Karten</title>
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="ffms.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="temp/css/bootstrap.min.css">
+  <link rel="stylesheet" href="temp/css/ffms.css">
 </head>
 <body>
 	<div class="container">
 	  <div class="page-header">
     <div class="row">
       <div class="col-md-2 col-sm-3">
-        <img id="ffms-logo" src="logo.svg" class="img" alt="Logo Freifunk Münsterland">
+        <img id="ffms-logo" src="temp/logo.svg" class="img" alt="Logo Freifunk Münsterland">
       </div>
       <div class="col-md-10 col-sm-9">
         <h2>Karten - Freifunk Münsterland
@@ -41,9 +41,13 @@
         </form>
       <br/>
       <h4><strong><a href="map/">Gesamtkarte des Freifunk Münsterlands</a></strong></h4>
+      <p><a class="btn-ffms-collapse visible-xs" data-toggle="collapse" data-target="#narrow-results">&#187; Mehr Freifunk Links</a></p>
+      <div id="narrow-results" class="narrow-results collapse">
       <p><a href="https://freifunk-muensterland.de">Freifunk Münsterland</a></p>
-      <p><a href="https://wiki.freifunk-muensterland.de/">Freifunk Münsterland Wiki</a></p>
-      <p><a href="https://forum.freifunk-muensterland.de/">Freifunk Münsterland Forum</a></p>
+      <p><a href="https://wiki.freifunk-muensterland.de/">Freifunk Münsterland - Wiki</a></p>
+      <p><a href="https://forum.freifunk-muensterland.de/">Freifunk Münsterland - Forum</a></p>
+      <p><a href="https://firmware.freifunk-muensterland.de/md-fw-dl/">Freifunk Münsterland - Firmware Assistent</a></p>
+      </div>
     </div>
     <!-- Spalte mit Domänen -->
     <div class="col-md-4 col-sm-4 col-xs-6">
@@ -57,215 +61,447 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Alle Domänen einfügen 
-            <tr>
-              <td><a href="mapXX/"> XX - name</a></td>
-            </tr> -->
+            <!-- Alle Domänen einfügen -->
             <tr>
               <td>
-                  <a href="map01/">01 - Münster</a> &ensp;&ndash;&ensp;
-                  <a class="ffms-muted" href="domaene01">Firmware </a>
-                  </td>
+                  <a href="map01/">01 - Münster</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene01">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map05/">05 - Münster Süd</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map05/">05 - Münster Süd</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene05">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map06/">06 - Westmünsterland</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map06/">06 - Westmünsterland</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene06">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map07/">07 - Telgte</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map07/">07 - Telgte</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene07">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map08/">08 - Gescher</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map08/">08 - Gescher</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene08">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map09/">09 - Stadtlohn</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map09/">09 - Stadtlohn</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene09">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map10/">10 - Multidomänen-L2TP-Test</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map10/">10 - Multidomänen-L2TP-Test</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene10">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map11/">11 - Bocholt</a> &mdash;
-                  <a class="ffms-muted" align="right" href="domaene01">Firmware </a>
-                  </td>
+              <td>
+                  <a href="map11/">11 - Bocholt</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene11">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map12/">12 - Dülmen</a> </td>
+              <td>
+                  <a href="map12/">12 - Dülmen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene12">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map13/">13 - Rorup</a> </td>
+              <td>
+                  <a href="map13/">13 - Rorup</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene13">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map14/">14 - Dingden</a> </td>
+              <td>
+                  <a href="map14/">14 - Dingden</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene14">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map15/">15 - Heek</a> </td>
+              <td>
+                  <a href="map15/">15 - Heek</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene15">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map16/">16 - Münster Promenade</a> </td>
+              <td>
+                  <a href="map16/">16 - Münster Promenade</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene16">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map17/">17 - Emsdetten</a> </td>
+              <td>
+                  <a href="map17/">17 - Emsdetten</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene17">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map18/">18 - Greven</a> </td>
+              <td>
+                  <a href="map18/">18 - Greven</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene18">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map19/">19 - Neuenkirchen</a> </td>
+              <td>
+                  <a href="map19/">19 - Neuenkirchen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene19">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map20/">20 - Ochtrup</a> </td>
+              <td>
+                  <a href="map20/">20 - Ochtrup</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene20">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map21/">21 - Rheine</a> </td>
+              <td>
+                  <a href="map21/">21 - Rheine</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene21">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map22/">22 - Steinfurt</a> </td>
+              <td>
+                  <a href="map22/">22 - Steinfurt</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene22">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map23/">23 - Metelen</a> </td>
+              <td>
+                  <a href="map23/">23 - Metelen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene23">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map24/">24 - Wettringen</a> </td>
+              <td>
+                  <a href="map24/">24 - Wettringen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene24">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map25/">25 - Kreis Steinfurt Ost</a> </td>
+              <td>
+                  <a href="map25/">25 - Kreis Steinfurt Ost</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene25">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map26/">26 - Borken</a> </td>
+              <td>
+                  <a href="map26/">26 - Borken</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene26">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map27/">27 - Selm</a> </td>
+              <td>
+                  <a href="map27/">27 - Selm</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene27">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map28/">28 - Horstmar</a> </td>
+              <td>
+                  <a href="map28/">28 - Horstmar</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene28">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map29/">29 - Laer</a> </td>
+              <td>
+                  <a href="map29/">29 - Laer</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene29">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map30/">30 - Nordwalde</a> </td>
+              <td>
+                  <a href="map30/">30 - Nordwalde</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene30">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map31/">31 - Altenberge</a> </td>
+              <td>
+                  <a href="map31/">31 - Altenberge</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene31">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map32/">32 - Ahlen</a> </td>
+              <td>
+                  <a href="map32/">32 - Ahlen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene32">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map33/">33 - Beckum</a> </td>
+              <td>
+                  <a href="map33/">33 - Beckum</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene33">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map34/">34 - Beelen</a> </td>
+              <td>
+                  <a href="map34/">34 - Beelen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene34">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map35/">35 - Drensteinfurt</a> </td>
+              <td>
+                  <a href="map35/">35 - Drensteinfurt</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene35">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map36/">36 - Ennigerloh</a> </td>
+              <td>
+                  <a href="map36/">36 - Ennigerloh</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene36">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map37/">37 - Everswinkel</a> </td>
+              <td>
+                  <a href="map37/">37 - Everswinkel</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene37">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map38/">38 - Oelde</a> </td>
+              <td>
+                  <a href="map38/">38 - Oelde</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene38">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map39/">39 - Ostbevern</a> </td>
+              <td>
+                  <a href="map39/">39 - Ostbevern</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene39">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map40/">40 - Sassenberg</a> </td>
+              <td>
+                  <a href="map40/">40 - Sassenberg</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene40">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map41/">41 - Sendenhorst</a> </td>
+              <td>
+                  <a href="map41/">41 - Sendenhorst</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene41">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map42/">42 - Wadersloh</a> </td>
+              <td>
+                  <a href="map42/">42 - Wadersloh</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene42">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map43/">43 - Warendorf</a> </td>
+              <td>
+                  <a href="map43/">43 - Warendorf</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene43">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map44/">44 - Ascheberg</a> </td>
+              <td>
+                  <a href="map44/">44 - Ascheberg</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene44">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map45/">45 - Billerbeck</a> </td>
+              <td>
+                  <a href="map45/">45 - Billerbeck</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene45">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map46/">46 - Coesfeld</a> </td>
+              <td>
+                  <a href="map46/">46 - Coesfeld</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene46">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map47/">47 - Havixbeck</a> </td>
+              <td>
+                  <a href="map47/">47 - Havixbeck</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene47">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map48/">48 - Lüdinghausen</a> </td>
+              <td>
+                  <a href="map48/">48 - Lüdinghausen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene48">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map49/">49 - Nordkirchen</a> </td>
+              <td>
+                  <a href="map49/">49 - Nordkirchen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene49">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map50/">50 - Nottuln</a> </td>
+              <td>
+                  <a href="map50/">50 - Nottuln</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene50">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map51/">51 - Olfen</a> </td>
+              <td>
+                  <a href="map51/">51 - Olfen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene51">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map52/">52 - Rosendahl</a> </td>
+              <td>
+                  <a href="map52/">52 - Rosendahl</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene52">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map53/">53 - Senden</a> </td>
+              <td>
+                  <a href="map53/">53 - Senden</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene53">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map54/">54 - Ahaus</a> </td>
+              <td>
+                  <a href="map54/">54 - Ahaus</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene54">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map55/">55 - Heiden</a> </td>
+              <td>
+                  <a href="map55/">55 - Heiden</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene55">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map56/">56 - Isselburg</a> </td>
+              <td>
+                  <a href="map56/">56 - Isselburg</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene56">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map57/">57 - Legden</a> </td>
+              <td>
+                  <a href="map57/">57 - Legden</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene57">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map58/">58 - Reken</a> </td>
+              <td>
+                  <a href="map58/">58 - Reken</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene58">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map59/">59 - Rhede</a> </td>
+              <td>
+                  <a href="map59/">59 - Rhede</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene59">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map60/">60 - Schöppingen</a> </td>
+              <td>
+                  <a href="map60/">60 - Schöppingen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene60">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map61/">61 - Südlohn</a> </td>
+              <td>
+                  <a href="map61/">61 - Südlohn</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene61">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map62/">62 - Velen</a> </td>
+              <td>
+                  <a href="map62/">62 - Velen</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene62">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map63/">63 - Vreden</a> </td>
+              <td>
+                  <a href="map63/">63 - Vreden</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene63">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map64/">64 - Gronau</a> </td>
+              <td>
+                  <a href="map64/">64 - Gronau</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene64">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map65/">65 - Test</a> </td>
+              <td>
+                  <a href="map65/">65 - Test</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene65">Firmware </a>
+              </td>
             </tr>
             <tr>
-              <td><a href="map66/">66 - Dedibox</a> </td>
+              <td>
+                  <a href="map66/">66 - Dedibox</a> 
+                  &ensp;&ndash;&ensp;
+                  <a class="ffms-muted" href="https://freifunk-muensterland.de/md-fw-dl/?region=domaene66">Firmware </a>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -281,125 +517,121 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Alle Communities einfügen 
-            <tr>
-                <td><a href=""> </a></td>
-            </tr>
-            -->
+            <!-- Alle Communities einfügen -->
             <tr>
                 <td><a Community href="map_Borken/">Community Borken</a><br/> <span class="ffms-muted">Domänen:</span>  
-                    <a class="text-muted" href="map26/">26</a>
+                    <a href="map26/">26</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Dedibox/">Community Dedibox</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map66/">66</a>
+                <td><a Community href="map_Dedibox/">Community Dedibox</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map66/">66</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Dingden/">Community Dingden</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map14/">14</a>
+                <td><a Community href="map_Dingden/">Community Dingden</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map14/">14</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Gronau/">Community Gronau</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map64/">64</a>
+                <td><a Community href="map_Gronau/">Community Gronau</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map64/">64</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Kreis Coesfeld/">Community Kreis Coesfeld</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map12/">12</a>
-                    <a class="text-muted" href="map13/">13</a>
-                    <a class="text-muted" href="map44/">44</a>
-                    <a class="text-muted" href="map45/">45</a>
-                    <a class="text-muted" href="map46/">46</a>
-                    <a class="text-muted" href="map47/">47</a>
-                    <a class="text-muted" href="map48/">48</a>
-                    <a class="text-muted" href="map49/">49</a>
-                    <a class="text-muted" href="map50/">50</a>
-                    <a class="text-muted" href="map51/">51</a>
-                    <a class="text-muted" href="map52/">52</a>
-                    <a class="text-muted" href="map53/">53</a>
+                <td><a Community href="map_Kreis Coesfeld/">Community Kreis Coesfeld</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map12/">12</a>
+                    <a href="map13/">13</a>
+                    <a href="map44/">44</a>
+                    <a href="map45/">45</a>
+                    <a href="map46/">46</a>
+                    <a href="map47/">47</a>
+                    <a href="map48/">48</a>
+                    <a href="map49/">49</a>
+                    <a href="map50/">50</a>
+                    <a href="map51/">51</a>
+                    <a href="map52/">52</a>
+                    <a href="map53/">53</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Kreis Steinfurt/">Community Kreis Steinfurt</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map17/">17</a>
-                    <a class="text-muted" href="map18/">18</a>
-                    <a class="text-muted" href="map19/">19</a>
-                    <a class="text-muted" href="map20/">20</a>
-                    <a class="text-muted" href="map21/">21</a>
-                    <a class="text-muted" href="map22/">22</a>
-                    <a class="text-muted" href="map23/">23</a>
-                    <a class="text-muted" href="map24/">24</a>
-                    <a class="text-muted" href="map25/">25</a>
-                    <a class="text-muted" href="map28/">28</a>
-                    <a class="text-muted" href="map29/">29</a>
-                    <a class="text-muted" href="map30/">30</a>
-                    <a class="text-muted" href="map31/">31</a>
+                <td><a Community href="map_Kreis Steinfurt/">Community Kreis Steinfurt</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map17/">17</a>
+                    <a href="map18/">18</a>
+                    <a href="map19/">19</a>
+                    <a href="map20/">20</a>
+                    <a href="map21/">21</a>
+                    <a href="map22/">22</a>
+                    <a href="map23/">23</a>
+                    <a href="map24/">24</a>
+                    <a href="map25/">25</a>
+                    <a href="map28/">28</a>
+                    <a href="map29/">29</a>
+                    <a href="map30/">30</a>
+                    <a href="map31/">31</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Kreis Warendorf/">Community Kreis Warendorf</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map07/">07</a>
-                    <a class="text-muted" href="map32/">32</a>
-                    <a class="text-muted" href="map33/">33</a>
-                    <a class="text-muted" href="map34/">34</a>
-                    <a class="text-muted" href="map35/">35</a>
-                    <a class="text-muted" href="map36/">36</a>
-                    <a class="text-muted" href="map37/">37</a>
-                    <a class="text-muted" href="map38/">38</a>
-                    <a class="text-muted" href="map39/">39</a>
-                    <a class="text-muted" href="map40/">40</a>
-                    <a class="text-muted" href="map41/">41</a>
-                    <a class="text-muted" href="map42/">42</a>
-                    <a class="text-muted" href="map43/">43</a>
+                <td><a Community href="map_Kreis Warendorf/">Community Kreis Warendorf</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map07/">07</a>
+                    <a href="map32/">32</a>
+                    <a href="map33/">33</a>
+                    <a href="map34/">34</a>
+                    <a href="map35/">35</a>
+                    <a href="map36/">36</a>
+                    <a href="map37/">37</a>
+                    <a href="map38/">38</a>
+                    <a href="map39/">39</a>
+                    <a href="map40/">40</a>
+                    <a href="map41/">41</a>
+                    <a href="map42/">42</a>
+                    <a href="map43/">43</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Münster/">Community Münster</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map01/">01</a>
-                    <a class="text-muted" href="map05/">05</a>
-                    <a class="text-muted" href="map16/">16</a>
+                <td><a Community href="map_Münster/">Community Münster</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map01/">01</a>
+                    <a href="map05/">05</a>
+                    <a href="map16/">16</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Selm/">Community Selm</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map27/">27</a>
+                <td><a Community href="map_Selm/">Community Selm</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map27/">27</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Test/">Community Test</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map65/">65</a>
+                <td><a Community href="map_Test/">Community Test</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map65/">65</a>
                 </td>
             </tr>
  
             <tr>
-                <td><a Community href="map_Westmünsterland/">Community Westmünsterland</a><br/> <span class="text-muted">Domänen:</span>  
-                    <a class="text-muted" href="map06/">06</a>
-                    <a class="text-muted" href="map08/">08</a>
-                    <a class="text-muted" href="map09/">09</a>
-                    <a class="text-muted" href="map11/">11</a>
-                    <a class="text-muted" href="map15/">15</a>
-                    <a class="text-muted" href="map54/">54</a>
-                    <a class="text-muted" href="map55/">55</a>
-                    <a class="text-muted" href="map56/">56</a>
-                    <a class="text-muted" href="map57/">57</a>
-                    <a class="text-muted" href="map58/">58</a>
-                    <a class="text-muted" href="map59/">59</a>
-                    <a class="text-muted" href="map60/">60</a>
-                    <a class="text-muted" href="map61/">61</a>
-                    <a class="text-muted" href="map62/">62</a>
-                    <a class="text-muted" href="map63/">63</a>
+                <td><a Community href="map_Westmünsterland/">Community Westmünsterland</a><br/> <span class="ffms-muted">Domänen:</span>  
+                    <a href="map06/">06</a>
+                    <a href="map08/">08</a>
+                    <a href="map09/">09</a>
+                    <a href="map11/">11</a>
+                    <a href="map15/">15</a>
+                    <a href="map54/">54</a>
+                    <a href="map55/">55</a>
+                    <a href="map56/">56</a>
+                    <a href="map57/">57</a>
+                    <a href="map58/">58</a>
+                    <a href="map59/">59</a>
+                    <a href="map60/">60</a>
+                    <a href="map61/">61</a>
+                    <a href="map62/">62</a>
+                    <a href="map63/">63</a>
                 </td>
             </tr>
  
@@ -413,8 +645,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- optional via CDN: <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  </script> -->
-    <script src="js/bootstrap.min.js"></script> 
-    <script src="js/search.js"></script>
+    <script src="temp/js/bootstrap.min.js"></script> 
+    <script src="temp/js/search.js"></script>
     <script>
         function myScroll(my) {
         $('html, body').animate({
@@ -422,9 +654,4 @@
             }, 200);
         }
     </script>
-
-
-
-
 </body>
-
